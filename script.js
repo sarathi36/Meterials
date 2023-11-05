@@ -3,7 +3,7 @@ const countdown = document.querySelector('.countdown');
 const pleaseWaitText = document.querySelector('.pleaseWait-text');
 const manualDownloadText = document.querySelector('.manualDownload-text');
 const manualDownloadLink = document.querySelector('.manualDownload-link');
-var timeLeft = 10;
+var timeLeft = 5;
 
 download.addEventListener('click', () => {
   download.style.display = "none";
