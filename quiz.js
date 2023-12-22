@@ -44,6 +44,32 @@ const questions = [
       correctOption: "optionD"
   },
 
+  {
+    question: "Who is the first citizen in india ?",
+    optionA: "Prime Minister",
+    optionB: "President",
+    optionC: "Cheif Minister",
+    optionD: "MLA",
+    correctOption: "optionB"
+},
+
+{
+    question: "Name of the longer river in the river ?",
+    optionA: "Kauveri",
+    optionB: "Amaravathi",
+    optionC: "Ganga",
+    optionD: "Nile",
+    correctOption: "optionD"
+},
+
+{
+    question: "Which of the smallest bone in the human body ?",
+    optionA: "Finger bone",
+    optionB: "Ear bone",
+    optionC: "Neck bone",
+    optionD: "Leg bone",
+    correctOption: "optionB"
+},
  
 
   
@@ -257,7 +283,7 @@ function handleNextQuestion() {
   unCheckRadioButtons()
   //delays next question displaying for a second
   setTimeout(() => {
-      if (indexNumber <= 4) {
+      if (indexNumber <= 2) {
           NextQuestion(indexNumber)
       }
       else {
@@ -293,15 +319,15 @@ function handleEndGame() {
       remark = " Keep Practicing."
       remarkColor = "red"
   }
-  else if (playerScore >= 2 && playerScore < 3) {
+  else if (playerScore >= 2) {
       remark = " You can do better."
       remarkColor = "orange"
   }
-  else if (playerScore >= 4) {
+  else if (playerScore >= 3) {
       remark = "Excellent, Keep the good work going."
       remarkColor = "green"
   }
-  const playerGrade = (playerScore / 5) * 100
+  const playerGrade = (playerScore / 3) * 100
 
   //data to display to score board
   document.getElementById('remarks').innerHTML = remark
